@@ -36,10 +36,10 @@
           </div>
 
           <div class="site-state-item site-state-categories">
-            {% if theme.menu.categories %}<a href="{{ url_for(theme.menu.categories) }}">{% endif %}
+            <a href="{{ url_for("/categories") }}">
               <span class="site-state-item-count">{{ site.categories.length }}</span>
               <span class="site-state-item-name">{{ __('state.categories') }}</span>
-              {% if theme.menu.categories %}</a>{% endif %}
+            </a>
           </div>
 
           <div class="site-state-item site-state-tags">
