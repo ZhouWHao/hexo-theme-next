@@ -33,7 +33,7 @@ highlight_theme: normal
 
 
 # MathJax Support
-mathjax: true
+mathjax: false
 
 
 # Schemes
