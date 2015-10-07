@@ -29,11 +29,11 @@
 
         {% if page.comments %}
           <div class="comments" id="comments">
-            {% if (config.duoshuo and config.duoshuo.shortname) or config.duoshuo_shortname %}
+            {% if (theme.duoshuo and theme.duoshuo.shortname) or theme.duoshuo_shortname %}
               <div class="ds-thread" data-thread-key="{{ page.path }}"
                    data-title="{{ page.title }}" data-url="{{ page.permalink }}">
               </div>
-            {% elseif config.disqus_shortname %}
+            {% elseif theme.disqus_shortname %}
               <div id="disqus_thread">
                 <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
               </div>
@@ -63,7 +63,9 @@
   {% include '_scripts/fancy-box.swig' %}
   {% include '_scripts/helpers.swig' %}
   {% include '_scripts/motion.swig' %}
-  <script type="text/javascript" src="{{ url_for(theme.js) }}/nav-toggle.js"></script>
+
+  <script type="text/javascript" src="{{ url_for(theme.js) }}/nav-toggle.js?v={{ theme.version }}"></script>
+  <script type="text/javascript" src="{{ url_for(theme.vendors) }}/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
 
   {% block script_extra %}{% endblock %}
 
@@ -71,6 +73,9 @@
     $(document).ready(function () {
       if (CONFIG.sidebar === 'always') {
         displaySidebar();
+      }
+      if (isMobile()) {
+        FastClick.attach(document.body);
       }
     });
   </script>
