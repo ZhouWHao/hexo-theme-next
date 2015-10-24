@@ -42,7 +42,9 @@
         {% endif %}
       </div>
 
-      {% block sidebar %}{% endblock %}
+      {% if theme.sidebar !== 'remove' %}
+        {% block sidebar %}{% endblock %}
+      {% endif %}
     </main>
 
     <footer id="footer" class="footer">
@@ -71,15 +73,23 @@
 
   <script type="text/javascript">
     $(document).ready(function () {
-      if (CONFIG.sidebar === 'always') {
-        displaySidebar();
-      }
-      if (isMobile()) {
-        FastClick.attach(document.body);
-      }
+
+      isMobile() && FastClick.attach(document.body);
+
+      // Define Motion Sequence.
+      motionIntegrator
+        .add(motionMiddleWares.logo)
+        .add(motionMiddleWares.menu)
+        .add(motionMiddleWares.backToTop)
+        .add(motionMiddleWares.postList)
+        .add(motionMiddleWares.sidebar);
+
+      // Bootstrap Motion.
+      motionIntegrator.bootstrap();
     });
   </script>
 
+  {% include '_scripts/tinysou.swig' %}
   {% include '_scripts/mathjax.swig' %}
   {% block comment_system %}{% endblock %}
   {% include '_scripts/baidushare.swig' %}

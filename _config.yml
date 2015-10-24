@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # when running hexo in a subdirectory (e.g. domain.tld/blog), remove leading slashes ( "/archives" -> "archives" )
 menu:
   home: /
@@ -6,55 +7,145 @@ menu:
   tags: /tags
   about: /about
   #commonweal: /404.html
+=======
+# ---------------------------------------------------------------
+# Site Information Settings
+# ---------------------------------------------------------------
+>>>>>>> 333583e4877277f40026ab8e064b3b6c8a564f10
 
 # Place your favicon.ico to /source directory.
 favicon: /favicon.ico
 
 # Set default keywords (Use a comma to separate)
+<<<<<<< HEAD
 keywords: "Java,中间件,流式计算,分布式"
+=======
+keywords: "Hexo, NexT"
+>>>>>>> 333583e4877277f40026ab8e064b3b6c8a564f10
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
 # Set rss to specific value if you have burned your feed already.
 rss: /atom.xml
 
-# Icon fonts
-# Place your font into next/source/fonts, specify directory-name and font-name here
-# Avialable: default | linecons | fifty-shades | feather
-icon_font: default
-#icon_font: fifty-shades
-#icon_font: feather
-#icon_font: linecons
-
-# Code Highlight theme
-# Available value: normal | night | night eighties | night blue | night bright
-# https://github.com/chriskempson/tomorrow-theme
-highlight_theme: normal
+# Specify the date when the site was setup
+#since: 2015
 
 
+
+<<<<<<< HEAD
 # MathJax Support
 mathjax: false
+=======
+>>>>>>> 333583e4877277f40026ab8e064b3b6c8a564f10
 
+# ---------------------------------------------------------------
+# Menu Settings
+# ---------------------------------------------------------------
+
+# When running hexo in a subdirectory (e.g. domain.tld/blog)
+# Remove leading slashes ( "/archives" -> "archives" )
+menu:
+  home: /
+  #categories: /categories
+  #about: /about
+  archives: /archives
+  tags: /tags
+  #commonweal: /404.html
+
+
+# Enable/Disable menu icons.
+# Icon Mapping:
+#   Map a menu item to a specific FontAwesome icon name.
+#   Key is the name of menu item and value is the name of FontAwsome icon.
+#   When an question mask icon presenting up means that the item has no mapping icon.
+menu_icons:
+  enable: true
+  # Icon Mapping.
+  home: home
+  about: user
+  categories: th
+  tags: tags
+  archives: archive
+  commonweal: heartbeat
+
+
+
+
+# ---------------------------------------------------------------
+# Scheme Settings
+# ---------------------------------------------------------------
 
 # Schemes
 scheme: Mist
 
 
+
+
+# ---------------------------------------------------------------
+# Sidebar Settings
+# ---------------------------------------------------------------
+
 # Sidebar, available value:
 #  - post    expand on posts automatically. Default.
 #  - always  expand for all pages automatically
 #  - hide    expand only when click on the sidebar toggle icon.
+#  - remove  Totally remove sidebar including sidebar toggle icon.
 sidebar: post
 #sidebar: always
 #sidebar: hide
+#sidebar: remove
 
+
+# Sidebar Avatar
+#avatar:
+
+
+# Social links
+# social:
+  #GitHub:
+  #Others:
+
+
+# TOC in the Sidebar
+toc:
+  enable: true
+
+  # Automatically add list number to toc.
+  number: true
+
+
+# Creative Commons 4.0 International License.
+# http://creativecommons.org/
+# Available: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
+#creative_commons: by-nc-sa
+#creative_commons:
+
+
+
+
+# ---------------------------------------------------------------
+# Misc Theme Settings
+# ---------------------------------------------------------------
+
+# Custom Logo.
+# !!Only available for Default Scheme currently.
+# Options:
+#   enabled: [true/false] - Replace with specific image
+#   image: url-of-image   - Images's url
+custom_logo:
+  enabled: false
+  image:
+
+
+# Code Highlight theme
+# Available value:
+#    normal | night | night eighties | night blue | night bright
+# https://github.com/chriskempson/tomorrow-theme
+highlight_theme: normal
 
 # Automatically scroll page to section which is under <!-- more --> mark.
 scroll_to_more: true
-
-
-# Automatically add list number to toc.
-toc_list_number: true
 
 # Automatically Excerpt
 auto_excerpt:
@@ -62,8 +153,44 @@ auto_excerpt:
   length: 150
 
 # Use Lato font
-# Note: this option is avialable only when the language is not `zh-Hans`
 use_font_lato: true
+
+
+
+# ---------------------------------------------------------------
+# Third Party Services Settings
+# ---------------------------------------------------------------
+
+# MathJax Support
+mathjax:
+
+
+# Swiftype Search API Key
+#swiftype_key:
+
+# Baidu Analytics ID
+#baidu_analytics:
+
+# Duoshuo ShortName
+#duoshuo_shortname:
+
+# Disqus
+#disqus_shortname:
+
+# Share
+#jiathis:
+
+# Share
+#duoshuo_share: true
+
+# Google Webmaster tools verification setting
+# See: https://www.google.com/webmasters/
+#google_site_verification:
+
+
+# Google Analytics
+#google_analytics:
+
 
 # Make duoshuo show UA
 # user_id must NOT be null when admin_enable is true!
@@ -74,8 +201,29 @@ duoshuo_info:
   user_id: 4141040
   #admin_nickname: ROOT
 
-## DO NOT EDIT THE FOLLOWING SETTINGS
-## UNLESS YOU KNOW WHAT YOU ARE DOING
+
+# Facebook SDK Support.
+# https://github.com/iissnan/hexo-theme-next/pull/410
+facebook_sdk:
+  enable: false
+  app_id:       #<app_id>
+  fb_admin:     #<user_id>
+  like_button:  #true
+  webmaster:    #true
+
+
+
+
+
+
+
+
+
+#! ---------------------------------------------------------------
+#! DO NOT EDIT THE FOLLOWING SETTINGS
+#! UNLESS YOU KNOW WHAT YOU ARE DOING
+#! ---------------------------------------------------------------
+
 
 # Use velocity to animate everything.
 use_motion: true
@@ -90,4 +238,4 @@ js: js
 images: images
 
 # Theme version
-version: 0.4.5.1
+version: 0.4.5.2
