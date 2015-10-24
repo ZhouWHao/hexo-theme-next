@@ -34,6 +34,10 @@
 
 <link rel="stylesheet" type="text/css" href="{{ url_for(theme.css) }}/main.css?v={{ theme.version }}"/>
 
+{% if config.author %}
+    <meta name="author" content="{{ config.author }}">
+{% endif %}
+
 {% if config.description %}
     <meta name="description" content="{{ config.description }}" />
 {% endif %}
