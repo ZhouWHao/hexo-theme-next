@@ -32,6 +32,8 @@
   <link href='//fonts.useso.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 {% endif %}
 
+<link rel="stylesheet" type="text/css" href="{{ url_for(theme.vendors) }}/font-awesome/css/font-awesome.min.css?v=4.4.0" />
+
 <link rel="stylesheet" type="text/css" href="{{ url_for(theme.css) }}/main.css?v={{ theme.version }}"/>
 
 {% if config.description %}
@@ -51,7 +53,7 @@
 {% endif %}
 
 {% if theme.favicon %}
-  <link rel="shorticon icon" type="image/x-icon" href="{{ url_for(theme.favicon) }}?v={{ theme.version }}" />
+  <link rel="shortcut icon" type="image/x-icon" href="{{ url_for(theme.favicon) }}?v={{ theme.version }}" />
 {% endif %}
 
 {{ open_graph({
@@ -67,3 +69,8 @@
     sidebar: '{{ theme.sidebar }}'
   };
 </script>
+
+{% if theme.facebook_sdk.enable and theme.facebook_sdk.webmaster %}
+  <meta property="fb:admins" content="{{ theme.facebook_sdk.fb_admin }}" />
+  <meta property="fb:app_id" content="{{ theme.facebook_sdk.app_id }}" />
+{% endif %}
