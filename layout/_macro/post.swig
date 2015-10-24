@@ -154,17 +154,8 @@
         </div>
       {% endif %}
 
-      {% if not is_index %}
-        <div class="post-spread">
-        {% if theme.jiathis %}
-          {% include '../_partials/share/jiathis.swig' %}
-        {% elseif theme.duoshuo_shortname and theme.duoshuo_share %}
-          {% include '../_partials/share/duoshuo_share.swig' %}
-        {% endif %}
-        </div>
-      {% endif %}
 
-      {% if not is_index and (post.prev or post.next) %}
+      {% if not is_index and (post.prev or post.next) and not navlessPost %}
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             {% if post.next %}

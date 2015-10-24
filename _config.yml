@@ -1,27 +1,12 @@
-<<<<<<< HEAD
-# when running hexo in a subdirectory (e.g. domain.tld/blog), remove leading slashes ( "/archives" -> "archives" )
-menu:
-  home: /
-  #categories: /categories
-  archives: /archives
-  tags: /tags
-  about: /about
-  #commonweal: /404.html
-=======
 # ---------------------------------------------------------------
 # Site Information Settings
 # ---------------------------------------------------------------
->>>>>>> 333583e4877277f40026ab8e064b3b6c8a564f10
 
 # Place your favicon.ico to /source directory.
 favicon: /favicon.ico
 
 # Set default keywords (Use a comma to separate)
-<<<<<<< HEAD
 keywords: "Java,中间件,流式计算,分布式"
-=======
-keywords: "Hexo, NexT"
->>>>>>> 333583e4877277f40026ab8e064b3b6c8a564f10
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -33,12 +18,6 @@ rss: /atom.xml
 
 
 
-<<<<<<< HEAD
-# MathJax Support
-mathjax: false
-=======
->>>>>>> 333583e4877277f40026ab8e064b3b6c8a564f10
-
 # ---------------------------------------------------------------
 # Menu Settings
 # ---------------------------------------------------------------
@@ -48,9 +27,9 @@ mathjax: false
 menu:
   home: /
   #categories: /categories
-  #about: /about
   archives: /archives
   tags: /tags
+  about: /about
   #commonweal: /404.html
 
 
@@ -162,7 +141,7 @@ use_font_lato: true
 # ---------------------------------------------------------------
 
 # MathJax Support
-mathjax:
+mathjax: true
 
 
 # Swiftype Search API Key
