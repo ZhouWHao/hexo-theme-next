@@ -43,6 +43,10 @@
     <meta name="description" content="{{ config.description }}" />
 {% endif %}
 
+{% if config.author %}
+    <meta name="author" content="{{ config.author }}" />
+{% endif %}
+
 {% if page.keywords %}
   <meta name="keywords" content="{{ page.keywords }}" />
 {% elif page.tags and page.tags.length %}

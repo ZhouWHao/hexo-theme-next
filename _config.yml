@@ -14,7 +14,7 @@ keywords: "Java,中间件,流式计算,分布式"
 rss: /atom.xml
 
 # Specify the date when the site was setup
-#since: 2015
+#since: 2013
 
 
 
@@ -151,7 +151,7 @@ mathjax: true
 #baidu_analytics:
 
 # Duoshuo ShortName
-#duoshuo_shortname:
+duoshuo_shortname: wuchong
 
 # Disqus
 #disqus_shortname:
@@ -160,7 +160,7 @@ mathjax: true
 #jiathis:
 
 # Share
-#duoshuo_share: true
+duoshuo_share: true
 
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
@@ -168,7 +168,7 @@ mathjax: true
 
 
 # Google Analytics
-#google_analytics:
+#google_analytics: 
 
 
 # Make duoshuo show UA

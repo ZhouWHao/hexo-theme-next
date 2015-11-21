@@ -83,8 +83,11 @@
       </header>
     {% endif %}
 
-
-    <div class="post-body">
+    {% if post.img == "no-border" %}
+      <div class="post-body no-border">
+    {% else%}
+      <div class="post-body">
+    {% endif %}
 
       {# Gallery support #}
       {% if post.photos and post.photos.length %}
@@ -153,7 +156,6 @@
           {% endfor %}
         </div>
       {% endif %}
-
 
       {% if not is_index and (post.prev or post.next) and not navlessPost %}
         <div class="post-nav">
