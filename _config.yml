@@ -57,7 +57,8 @@ menu_icons:
 
 # Schemes
 scheme: Mist
-
+#scheme: Mist
+#scheme: Pisces
 
 
 
@@ -65,25 +66,26 @@ scheme: Mist
 # Sidebar Settings
 # ---------------------------------------------------------------
 
-# Sidebar, available value:
-#  - post    expand on posts automatically. Default.
-#  - always  expand for all pages automatically
-#  - hide    expand only when click on the sidebar toggle icon.
-#  - remove  Totally remove sidebar including sidebar toggle icon.
-sidebar: post
-#sidebar: always
-#sidebar: hide
-#sidebar: remove
-
-
-# Sidebar Avatar
-#avatar:
-
 
 # Social links
 # social:
   #GitHub:
   #Others:
+
+# Social Icons
+social_icons:
+  enable: true
+  # Icon Mappings
+  GitHub: github
+  Twitter: twitter
+  Weibo: weibo
+
+
+# Sidebar Avatar
+# in theme directory(source/images): /images/avatar.jpg
+# in site  directory(source/uploads): /uploads/avatar.jpg
+# default : /images/default_avatar.jpg
+#avatar:
 
 
 # TOC in the Sidebar
@@ -100,6 +102,20 @@ toc:
 #creative_commons: by-nc-sa
 #creative_commons:
 
+sidebar:
+  # Sidebar Position, available value: left | right
+  position: left
+  #position: right
+
+  # Sidebar Display, available value:
+  #  - post    expand on posts automatically. Default.
+  #  - always  expand for all pages automatically
+  #  - hide    expand only when click on the sidebar toggle icon.
+  #  - remove  Totally remove sidebar including sidebar toggle icon.
+  display: post
+  #display: always
+  #display: hide
+  #display: remove
 
 
 
@@ -151,16 +167,19 @@ mathjax: true
 #baidu_analytics:
 
 # Duoshuo ShortName
-duoshuo_shortname: wuchong
+#duoshuo_shortname: wuchong
 
 # Disqus
-#disqus_shortname:
+disqus_shortname: wuchong
 
 # Share
 #jiathis:
+add_this_id: ra-56d648eefec3350b
+
+
 
 # Share
-duoshuo_share: true
+#duoshuo_share: true
 
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
@@ -191,7 +210,16 @@ facebook_sdk:
   webmaster:    #true
 
 
+# Show number of visitors to each article.
+# You can visit https://leancloud.cn get AppID and AppKey.
+leancloud_visitors:
+  enable: false
+  app_id: #<app_id>
+  app_key: #<app_key>
 
+
+# Tencent analytics ID
+# tencent_analytics:
 
 
 
@@ -203,8 +231,7 @@ facebook_sdk:
 #! UNLESS YOU KNOW WHAT YOU ARE DOING
 #! ---------------------------------------------------------------
 
-
-# Use velocity to animate everything.
+# Motion
 use_motion: true
 
 # Fancybox
@@ -217,4 +244,4 @@ js: js
 images: images
 
 # Theme version
-version: 0.4.5.2
+version: 0.5.0
