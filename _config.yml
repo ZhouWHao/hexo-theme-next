@@ -14,7 +14,7 @@ keywords: "Java,中间件,流式计算,分布式"
 rss: /atom.xml
 
 # Specify the date when the site was setup
-#since: 2013
+since: 2013
 
 
 
@@ -161,25 +161,31 @@ mathjax: true
 
 
 # Swiftype Search API Key
-#swiftype_key:
+swiftype_key: 8Exkz7xsCTJyyCHiK9TY
+
+# title, chinese available
+links_title: Links
+# links
+links:
+  Flink China: http://blog.flink-china.org
 
 # Baidu Analytics ID
-#baidu_analytics:
+baidu_analytics: e6d1f421bbc9962127a50488f9ed37d1
 
 # Duoshuo ShortName
-#duoshuo_shortname: wuchong
+duoshuo_shortname: wuchong
 
 # Disqus
-disqus_shortname: wuchong
+#disqus_shortname: wuchong
 
 # Share
 #jiathis:
-add_this_id: ra-56d648eefec3350b
+#add_this_id: ra-56d648eefec3350b
 
 
 
 # Share
-#duoshuo_share: true
+duoshuo_share: true
 
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/

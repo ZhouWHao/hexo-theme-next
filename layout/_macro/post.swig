@@ -202,6 +202,8 @@
         </div>
       {% endif %}
 
+      {% if not is_index %}
+      wocacacaca
       <div class="post-spread">
         {% if theme.jiathis %}
           {% include '../_partials/share/jiathis.swig' %}
@@ -211,6 +213,7 @@
           {% include '../_partials/share/duoshuo_share.swig' %}
         {% endif %}
       </div>
+      {% endif %}
 
       {% if not is_index and (post.prev or post.next) and not navlessPost %}
         <div class="post-nav">
