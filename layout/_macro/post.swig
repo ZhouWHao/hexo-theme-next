@@ -203,7 +203,6 @@
       {% endif %}
 
       {% if not is_index %}
-      wocacacaca
       <div class="post-spread">
         {% if theme.jiathis %}
           {% include '../_partials/share/jiathis.swig' %}
