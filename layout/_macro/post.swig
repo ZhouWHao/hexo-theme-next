@@ -190,6 +190,7 @@
     <div>
       {% if ! is_index %}
         {% include 'reward.swig' %}
+        {% include 'creative-commons.swig' %}
       {% endif %}
     </div>
 

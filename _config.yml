@@ -26,8 +26,8 @@ since: 2013
 # Remove leading slashes ( "/archives" -> "archives" )
 menu:
   home: /
-  #categories: /categories
   archives: /archives
+  categories: /categories
   tags: /tags
   about: /about
   #commonweal: /404.html
@@ -99,8 +99,10 @@ toc:
 # Creative Commons 4.0 International License.
 # http://creativecommons.org/
 # Available: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
-#creative_commons: by-nc-sa
+creative_commons: by-nc-sa
 #creative_commons:
+
+copyright: true
 
 sidebar:
   # Sidebar Position, available value: left | right
@@ -179,13 +181,14 @@ duoshuo_shortname: wuchong
 #disqus_shortname: wuchong
 
 # Share
-#jiathis:
+jiathis: true
+
 #add_this_id: ra-56d648eefec3350b
 
 
 
 # Share
-duoshuo_share: true
+duoshuo_share: false
 
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
@@ -219,16 +222,13 @@ facebook_sdk:
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
-  enable: false
-  app_id: #<app_id>
-  app_key: #<app_key>
+  enable: true
+  app_id: ocvRLHmpvbUl4F6DRe6OeISd-gzGzoHsz
+  app_key: yzA4Ni2tfe2MyaTdi3MFHIuT
 
 
 # Tencent analytics ID
 # tencent_analytics:
-
-
-
 
 
 
