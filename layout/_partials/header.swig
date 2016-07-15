@@ -1,13 +1,12 @@
 <div class="site-meta {% if theme.custom_logo.enabled %}custom-logo{% endif %}">
   {% if theme.custom_logo.image and theme.scheme === 'Muse' %}
     <div class="site-meta-headline">
-      <a>
+      <a href="{{ config.root }}" rel="start">
         <img class="custom-logo-image" src="{{ theme.custom_logo.image }}"
              alt="{{ config.title }}"/>
       </a>
     </div>
-  {% endif %}
-
+  {% else %}  
   <div class="custom-logo-site-title">
     <a href="{{ config.root }}"  class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
@@ -15,6 +14,8 @@
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
+  {% endif %}
+  
   <p class="site-subtitle">{{ config.subtitle }}</p>
 </div>
 

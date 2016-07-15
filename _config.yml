@@ -6,7 +6,7 @@
 favicon: /favicon.ico
 
 # Set default keywords (Use a comma to separate)
-keywords: "Java,中间件,流式计算,分布式"
+keywords: "Apache, Flink, China"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -14,7 +14,8 @@ keywords: "Java,中间件,流式计算,分布式"
 rss: /atom.xml
 
 # Specify the date when the site was setup
-since: 2013
+since: 2016
+
 
 
 
@@ -26,10 +27,11 @@ since: 2013
 # Remove leading slashes ( "/archives" -> "archives" )
 menu:
   home: /
-  #categories: /categories
   archives: /archives
-  tags: /tags
+  #categories: /categories
+  doc: http://doc.flink-china.org
   about: /about
+  #tags: /tags
   #commonweal: /404.html
 
 
@@ -47,6 +49,7 @@ menu_icons:
   tags: tags
   archives: archive
   commonweal: heartbeat
+  doc: book
 
 
 
@@ -56,7 +59,7 @@ menu_icons:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Mist
+scheme: Muse
 #scheme: Mist
 #scheme: Pisces
 
@@ -85,7 +88,8 @@ social_icons:
 # in theme directory(source/images): /images/avatar.jpg
 # in site  directory(source/uploads): /uploads/avatar.jpg
 # default : /images/default_avatar.jpg
-#avatar:
+avatar: /images/avatar.png
+
 
 
 # TOC in the Sidebar
@@ -129,8 +133,8 @@ sidebar:
 #   enabled: [true/false] - Replace with specific image
 #   image: url-of-image   - Images's url
 custom_logo:
-  enabled: false
-  image:
+  enabled: true
+  image: /images/flink2.png
 
 
 # Code Highlight theme
@@ -157,32 +161,30 @@ use_font_lato: true
 # ---------------------------------------------------------------
 
 # MathJax Support
-mathjax: true
+mathjax:
 
 
 # Swiftype Search API Key
-swiftype_key: 8Exkz7xsCTJyyCHiK9TY
-
-# title, chinese available
-links_title: Links
-# links
-links:
-  Flink China: http://blog.flink-china.org
+swiftype_key: SzMeVigjZQyc5rQsQdao
 
 # Baidu Analytics ID
-baidu_analytics: e6d1f421bbc9962127a50488f9ed37d1
+baidu_analytics: d3c510fb797d20c510b539790be20773
 
 # Duoshuo ShortName
-duoshuo_shortname: wuchong
+duoshuo_shortname: flinkchina
 
 # Disqus
-#disqus_shortname: wuchong
+#disqus_shortname:
+
+# Baidu Share
+# Available value:
+#    button | slide
+#baidushare:
+##  type: button
 
 # Share
 #jiathis:
-#add_this_id: ra-56d648eefec3350b
-
-
+#add_this_id:
 
 # Share
 duoshuo_share: true
@@ -193,16 +195,16 @@ duoshuo_share: true
 
 
 # Google Analytics
-#google_analytics: 
+#google_analytics:
 
 
 # Make duoshuo show UA
 # user_id must NOT be null when admin_enable is true!
 # you can visit http://dev.duoshuo.com get duoshuo user id.
 duoshuo_info:
-  ua_enable: false
-  admin_enable: true
-  user_id: 4141040
+  ua_enable: true
+  admin_enable: false
+  user_id: 0
   #admin_nickname: ROOT
 
 
@@ -220,8 +222,8 @@ facebook_sdk:
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
   enable: false
-  app_id: #<app_id>
-  app_key: #<app_key>
+  app_id: JSbmIR7GIKHs28L50sYG6avi-gzGzoHsz 
+  app_key: TqG9ENSwGbmioh09011rbxGc 
 
 
 # Tencent analytics ID
